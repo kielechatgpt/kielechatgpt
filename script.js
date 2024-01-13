@@ -11,10 +11,31 @@ function sendMessage() {
     // Simulate a response from the system (replace with actual API call)
     var systemResponse = getSystemResponse();
     
-    // Display system response in the chat log after a short delay
-    setTimeout(function() {
-        appendMessage('system', systemResponse);
-    }, 500);
+    // Display system response with typing effect
+    simulateTyping('system', systemResponse);
+}
+
+function simulateTyping(sender, message) {
+    var chatLog = document.getElementById('chat-log');
+    var messageContainer = document.createElement('div');
+    messageContainer.className = sender;
+    chatLog.appendChild(messageContainer);
+
+    var index = 0;
+
+    function type() {
+        messageContainer.textContent += message[index];
+        index++;
+
+        if (index < message.length) {
+            setTimeout(type, Math.floor(Math.random() * 100) + 50); // Adjust typing speed here
+        } else {
+            // Scroll to the bottom of the chat log after typing is complete
+            chatLog.scrollTop = chatLog.scrollHeight;
+        }
+    }
+
+    type();
 }
 
 function appendMessage(sender, message) {
