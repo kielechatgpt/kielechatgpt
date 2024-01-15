@@ -8,6 +8,13 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+// Add an event listener for the Enter key
+document.getElementById('user-input').addEventListener('keyup', function(event) {
+    if (event.key === 'Enter') {
+        sendMessage();
+    }
+});
+
 
 //Function to send output to the chat interace on the KieleChatGPT page
 function sendMessage() {
