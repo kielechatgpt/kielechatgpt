@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>KieleChatGPT Configuration</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h2>KielChatGPT Config</h2>
+                    
+                    <div class="form-group">
+                        <label for="userInput">Vaste output gebruiken</label>
+                        <input type="text" id="userInput" class="form-control" placeholder="Wat moet kieleChatGPT als antwoord geven?...">
+                    </div>
+
+                    <div class="form-group text-center">
+                        <button id="updateButton" class="btn btn-primary">Vastzetten</button>
+                        <button id="clearButton" class="btn btn-primary">Randomizen</button>
+                    </div>
+
+                    <div class="form-group text-center">
+                        <label for="userTextarea">Random antwoorden (1 regel per antwoord)</label>
+                        <textarea id="userTextarea" class="form-control" rows="15" placeholder="Random antwoorden..."></textarea>
+                    </div>
+                    <div class="form-group text-center">
+                        <button id="updateRandom" class="btn btn-primary">Update Random antwoorden</button>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="module" src="backend.js"></script>
+</body>
+</html>
