@@ -25,6 +25,14 @@ body {
     background-color: #f2f2f2;
 }
 
+.confetti {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 1000; /* Make sure it's above other elements */
+}
+
 input {
     flex: 1;
     padding: 8px;

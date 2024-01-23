@@ -32,6 +32,13 @@ function sendMessage() {
     
     // Display system response with typing effect
     simulateTyping('system', systemResponse);
+
+    // Add confetti effect
+    confetti({
+        particleCount: 100,
+        spread: 70,
+        origin: { y: 0.6 }
+    });
 }
 
 //Helper function to simulate as if the answer was 'live generated'.

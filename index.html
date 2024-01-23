@@ -8,23 +8,33 @@
     <title>ChatGPT Mimic</title>
 </head>
 <body>
+    <div id="confetti-container" class="confetti"></div>
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="chat-container">
-                    <div id="chat-log" class="chat-log"></div>
-                    <div class="user-input">
-                        <input type="text" id="user-input" class="form-control" placeholder="Wa wilde nou weer...?">
-                        <button id="sendButton" class="btn btn-primary">Send</button>
+                <div class="d-flex justify-content-center">
+                    <img src="KieleChatGPT_logo2.jpeg" width=50% alt="Logo">
+                </div>
 
+                <div class="col-md-8">
+                    <div class="chat-container">
+                        
+                        <div id="chat-log" class="chat-log"></div>
+                        <div class="user-input">
+                            <input type="text" id="user-input" class="form-control" placeholder="Wa wilde nou weer...?">
+                            <button id="sendButton" class="btn btn-primary">Send</button>
+
+                        </div>
                     </div>
                 </div>
-            </div>
+
+
         </div>
     </div>
     
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>    
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
     <script type="module" src="script.js"></script>
 </body>
 </html>
