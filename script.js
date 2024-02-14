@@ -78,7 +78,7 @@ function appendMessage(sender, message) {
 }
 
 function getSystemResponse() {
-    // Simulate a system response (replace with actual API call)
+    /*
     var responses;
     if(fixedSet){
         responses = fixed;
@@ -89,21 +89,37 @@ function getSystemResponse() {
     console.log('Random: ' + random);
     console.log('fixed: ' + fixed);
     console.log('fixedSet ' + fixedSet);
+    */
 
-    // var responses = [
-    //     "Wa denkte zelf? Zoek het ff zelf uit!",
-    //     "Vraog oe moeder maar ff.",
-    //     "Ja, wit ik veul.",
-    //     "Het ken mij eigenlijk niks schelen.",
-    //     "Geen idee!"
-    // ];
-    // responses = random;
+    // Simulate a system response (replace with actual API call)
+    var responses = [
+        "Wa denkte zelf? Zoek het uit!",
+        "Vraog oe moeder maar ffkes.",
+        "Ja, wit ik veul. Di is pas dun eerste versie van deze Eey Aai chatbot. Probeer ut later nog mar effekes.",
+        "'T ken me eigenluk niks schelen.",
+        "Kheb g' woon gin idee!",
+        "Ben ff pissen, en da kan wel effekes duren want: er is maar 1 wc en we moeten met z'n 2.",
+        "Wat zitte te mouwen, ga 's bier halen",
+        "Wa? Ik ben alaaf gehaakt!",
+        "Een antwoord? Kende gij rekenen? Reken d'r dan maor nie op!",
+        "Voor een kusje zeg ik ut!",
+        "Ga eerst maor ens bier haluh voor munne maten!",
+        "Doar laot ik me nie over uit. Maar ik zeg maar zo: beter schuin d’r in dan recht d’r neffe!",
+        "Ons moeder zeej nog, doe da nou nie!",
+        "Ja hoe’ist, staot er een paard in de gang ofzo!",
+        "Kek maor uit, want Mien heej ur feestmuts op!",
+        "Alleen ‘s-nachts na tweejuh..want die Brabantse zijn al zo lang!",
+        "Ho ffkes, nou eerst al die hendjes de lucht in!",
+        "Gin idee, ben ffekes de confetti ut m'n bier aan ut halen!"
+    ];
+    //responses = random;
 
     var randomIndex = Math.floor(Math.random() * responses.length);
     return responses[randomIndex];
 }
 
 
+/*
 
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js';
 import { getDatabase, onValue, ref, set} from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js';
@@ -151,3 +167,5 @@ onValue(fixedRef, (snapshot) => {
     // Convert the fixed value in firebase into an array (with only 1 element).
     fixed = fixedData.split();
 });
+
+*/
